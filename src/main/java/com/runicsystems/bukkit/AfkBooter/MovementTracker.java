@@ -3,6 +3,7 @@
  */
 package com.runicsystems.bukkit.AfkBooter;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 import org.bukkit.Location;
@@ -37,7 +38,7 @@ public class MovementTracker implements Runnable {
 			try {
 				isRunning = true;
 				
-				Player[] players = plugin.getServer().getOnlinePlayers();
+				Collection<? extends Player> players = plugin.getServer().getOnlinePlayers();
 				for(Player p : players) {
 					Location curPos = p.getLocation();
 					Location prevPos = positions.get(p);

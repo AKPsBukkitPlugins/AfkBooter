@@ -2,7 +2,7 @@ name: ${project.name}
 url: ${project.url}
 version: ${project.version}
 main: com.runicsystems.bukkit.AfkBooter.AfkBooter
-author: Neromir,andune
+author: Neromir,andune,AKPWebDesign
 
 commands:
   afkbooter:

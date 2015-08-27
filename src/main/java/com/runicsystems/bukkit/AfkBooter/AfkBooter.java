@@ -154,7 +154,7 @@ public class AfkBooter extends JavaPlugin
     public void kickAfkPlayers()
     {
         // If we haven't reached the player count threshold, don't even try to kick players.
-        if(getServer().getOnlinePlayers().length < settings.getPlayerCountThreshold())
+        if(getServer().getOnlinePlayers().toArray().length < settings.getPlayerCountThreshold())
             return;
 
         final long FAILED_KICK_LENGTH = 60000;
@@ -171,7 +171,7 @@ public class AfkBooter extends JavaPlugin
             {
             	// manually run movement tracker, just to be sure movement records are up-to-date.
             	// it is synchronized and protected from multiple runs, so this is a thread-safe call.
-//            	movementTracker.checkPlayerMovements();
+            	// movementTracker.checkPlayerMovements();
             	
                 if(lastKickAttempt + FAILED_KICK_LENGTH < now && !playersToKick.isEmpty())
                 {

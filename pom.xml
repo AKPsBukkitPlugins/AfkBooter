@@ -7,13 +7,12 @@
   <artifactId>AfkBooter</artifactId>
   <version>1.3.1</version>
   <name>AfkBooter</name>
-  <description>CraftBukkit/SignLift compatible open source Lift Signs for Bukkit</description>
   <url>https://dev.bukkit.org/server-mods/AfkBooter/</url>
 
   <scm>
-    <connection>scm:git:git://github.com/morganm/AfkBooter.git</connection>
-    <url>https://github.com/morganm/AfkBooter</url>
-    <developerConnection>scm:git:git@github.com:morganm/AfkBooter.git</developerConnection>
+    <connection>scm:git:git://github.com/AKPsBukkitPlugins/AfkBooter.git</connection>
+    <url>https://github.com/AKPsBukkitPlugins/AfkBooter</url>
+    <developerConnection>scm:git:git@github.com:AKPsBukkitPlugins/AfkBooter.git</developerConnection>
   </scm>
 
   <distributionManagement>
@@ -30,17 +29,20 @@
       <url>http://repo.bukkit.org/content/groups/public/</url>
     </repository>
     <repository>
+      <id>spigot-repo</id>
+      <url>http://hub.spigotmc.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
       <id>morganm-repo</id>
       <url>http://morganmc.dyndns.org/nexus/content/groups/public/</url>
     </repository>
   </repositories>
 
   <dependencies>
-    <!-- Bukkit -->
     <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>bukkit</artifactId>
-      <version>1.4.6-R0.1</version>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
+      <version>1.8.8-R0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
@@ -178,4 +180,5 @@
       </plugin>
     </plugins>
   </build>
+  <description>Boots AFK users.</description>
 </project>
