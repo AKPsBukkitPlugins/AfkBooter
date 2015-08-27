@@ -15,14 +15,6 @@
     <developerConnection>scm:git:git@github.com:AKPsBukkitPlugins/AfkBooter.git</developerConnection>
   </scm>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>morganm-repo-snapshot</id>
-      <name>Morganmc nexus repository</name>
-      <url>http://morganmc.dyndns.org/nexus/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <repositories>
     <repository>
       <id>bukkit-repo</id>
@@ -31,10 +23,6 @@
     <repository>
       <id>spigot-repo</id>
       <url>http://hub.spigotmc.org/nexus/content/groups/public/</url>
-    </repository>
-    <repository>
-      <id>morganm-repo</id>
-      <url>http://morganmc.dyndns.org/nexus/content/groups/public/</url>
     </repository>
   </repositories>
 
@@ -75,9 +63,9 @@
         <configuration>
           <verbose>true</verbose>
           <fork>true</fork>
-          <source>1.6</source>
-          <target>1.6</target>
-          <compilerVersion>1.6</compilerVersion>
+          <source>1.8</source>
+          <target>1.8</target>
+          <compilerVersion>1.8</compilerVersion>
         </configuration>
       </plugin>
 
